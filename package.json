@@ -4,12 +4,14 @@
   "description": "webpack project starter",
   "main": "index.js",
   "scripts": {
-    "dev":"webpack -d --watch",
-    "prod":"webpack -p"
+    "dev": "webpack -d --watch",
+    "prod": "webpack -p"
   },
   "author": "prasanna",
   "license": "ISC",
   "devDependencies": {
+    "html-webpack-plugin": "^2.26.0",
+    "path": "^0.12.7",
     "webpack": "^2.2.0"
   }
 }
