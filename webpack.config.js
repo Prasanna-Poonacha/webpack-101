@@ -11,6 +11,10 @@ module.exports = {
     },
     plugins: [new HtmlWebpackPlugin({
         title: "Webpack demo",
+        minify: {
+            collapseWhitespace: true
+        },
+        hash: true,
         template:"./src/index.html"
     })]
 }
