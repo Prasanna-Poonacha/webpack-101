@@ -4,14 +4,16 @@
   "description": "webpack project starter",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack -d --watch",
-    "prod": "webpack -p"
+    "dev": "webpack -d --progress --watch",
+    "prod": "webpack -p --progress"
   },
   "author": "prasanna",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^0.28.10",
     "html-webpack-plugin": "^2.26.0",
     "path": "^0.12.7",
+    "style-loader": "^0.20.2",
     "webpack": "^2.2.0"
   }
 }
