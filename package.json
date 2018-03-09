@@ -11,6 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^0.28.10",
+    "extract-text-webpack-plugin": "^2.1.2",
     "html-webpack-plugin": "^2.26.0",
     "node-sass": "^4.7.2",
     "path": "^0.12.7",

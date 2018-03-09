@@ -1,6 +1,7 @@
 //since webpack has lot of configurations we keep all the webpack related settings in this file and execute from package.json file scripts
 //we use the html webpack plugin to create the html page template dynamically
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var path = require('path');
 
 module.exports = {
@@ -11,18 +12,29 @@ module.exports = {
     },
     module: {
         rules: [
-            {test: /\.scss$/, use: ['style-loader','css-loader','sass-loader']} //webpack 2
+            {
+                test: /\.scss$/, 
+                use: ExtractTextPlugin.extract({
+                    fallbackLoader: 'style-loader',
+                    loader: ['css-loader','sass-loader'],
+                    publicPath: '/dist'
+                })} //webpack 2
             //{test: /\.css$/, loaders: 'style-loader!css-loader'} //webpack 1
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             title: "Webpack demo",
-            minify: {
-                collapseWhitespace: true
-            },
+            // minify: {
+            //     collapseWhitespace: true
+            // },
             hash: true,
             template:"./src/index.html"
+        }),
+        new ExtractTextPlugin({
+            filename: 'app.css',
+            disable: false,
+            allChunks: true
         })
     ]
 }
