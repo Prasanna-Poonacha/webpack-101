@@ -10,3 +10,6 @@
 5. Extract Text Webpack Plugin
     This plugin will help us dumping all the styles in a file
     npm install extract-text-webpack-plugin -D
+6. Webpack dev server
+    npm i webpack-dev-server -D
+   
