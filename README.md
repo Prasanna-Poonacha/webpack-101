@@ -26,3 +26,7 @@
     npm install babel babel-preset-react babel-preset-env --save-dev
     c. Adding loaders
         npm install --save-dev babel-loader babel-core
+9. Webpack extension features
+    # clean up dist folder
+    # multiples templates
+    # final export
