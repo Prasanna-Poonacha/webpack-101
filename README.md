@@ -12,4 +12,6 @@
     npm install extract-text-webpack-plugin -D
 6. Webpack dev server
     npm i webpack-dev-server -D
+7. Webpack dev server advanced configuration
+    a. create custom configuration for webpack dev server (this is served from memory as compared to webpack writes to the disk)
    

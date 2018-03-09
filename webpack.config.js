@@ -22,6 +22,11 @@ module.exports = {
             //{test: /\.css$/, loaders: 'style-loader!css-loader'} //webpack 1
         ]
     },
+    devServer: {
+        contentBase: path.join(__dirname,"dist"),
+        compress: true,
+        port: 9000
+    },
     plugins: [
         new HtmlWebpackPlugin({
             title: "Webpack demo",
