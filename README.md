@@ -14,4 +14,7 @@
     npm i webpack-dev-server -D
 7. Webpack dev server advanced configuration
     a. create custom configuration for webpack dev server (this is served from memory as compared to webpack writes to the disk)
+    lsof -i tcp:9000
+    kill -9 pid
+    stats - to limit the error info or other details and open a browser automatically
    

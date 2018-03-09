@@ -15,8 +15,8 @@ module.exports = {
             {
                 test: /\.scss$/, 
                 use: ExtractTextPlugin.extract({
-                    fallbackLoader: 'style-loader',
-                    loader: ['css-loader','sass-loader'],
+                    fallback: 'style-loader',
+                    use: ['css-loader','sass-loader'],
                     publicPath: '/dist'
                 })} //webpack 2
             //{test: /\.css$/, loaders: 'style-loader!css-loader'} //webpack 1
@@ -25,7 +25,8 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname,"dist"),
         compress: true,
-        port: 9000
+        stats: "errors-only",
+        open: true
     },
     plugins: [
         new HtmlWebpackPlugin({
