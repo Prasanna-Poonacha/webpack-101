@@ -18,3 +18,11 @@
     kill -9 pid
     stats - to limit the error info or other details and open a browser automatically
    
+8. Setup react app without using create-react-app
+    a. adding react
+    npm install --save react react-dom
+    b. Enabling ES6 and JSX
+    npm install babel babel-preset-react babel-preset-es2015 --save-dev
+    npm install babel babel-preset-react babel-preset-env --save-dev
+    c. Adding loaders
+        npm install --save-dev babel-loader babel-core

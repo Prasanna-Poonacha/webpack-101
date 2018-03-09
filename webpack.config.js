@@ -18,7 +18,12 @@ module.exports = {
                     fallback: 'style-loader',
                     use: ['css-loader','sass-loader'],
                     publicPath: '/dist'
-                })} //webpack 2
+                })},
+                {
+                    test: /\.js$/,
+                    exclude: /node_modules/, 
+                    loader: "babel-loader" 
+                } //webpack 2
             //{test: /\.css$/, loaders: 'style-loader!css-loader'} //webpack 1
         ]
     },
