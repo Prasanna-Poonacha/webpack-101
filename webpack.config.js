@@ -40,7 +40,6 @@ module.exports = {
             //     collapseWhitespace: true
             // },
             hash: true,
-            filename: "./../index.html",
             template:"./src/index.html"
         }),
         new ExtractTextPlugin({

@@ -27,6 +27,6 @@
     c. Adding loaders
         npm install --save-dev babel-loader babel-core
 9. Webpack extension features
-    # clean up dist folder
+    # clean up dist folder - npm i -D rimraf
     # multiples templates
-    # final export
+    # final export - using filename of HtmlWebpackPlugin
